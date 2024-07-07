@@ -14,17 +14,17 @@ import productCardsData from "@/_data/mockProductCardsData/productCardData.json"
 const mockTabsContent = [
   {
     title: "Выбор покупателей",
-    svgIcon: "/like.svg",
+    svgIcon: "./like.svg",
     tabsContent: "Карточки товара 1й набор",
   },
   {
     title: "Скидки",
-    svgIcon: "/discount.svg",
+    svgIcon: "./discount.svg",
     tabsContent: "Карточки товара 2й набор",
   },
   {
     title: "Успей купить",
-    svgIcon: "/fire.svg",
+    svgIcon: "./fire.svg",
     tabsContent: "Карточки товара 3й набор",
   },
 ];

@@ -60,7 +60,7 @@ const Brands = () => {
                     <li className="w-fit">
                       <Image
                         className="md:w-[170px] md:h-[88px]"
-                        src={`/brands/${brand.id}.png`}
+                        src={`./brands/${brand.id}.png`}
                         alt="brand logo"
                         width={120}
                         height={64}

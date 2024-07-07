@@ -57,7 +57,7 @@ const VideoConsultation = () => {
           </div>
           <Image
             className="absolute right-1 lg:right-28 bottom-0 hidden sm:block"
-            src="/consultant.png"
+            src="./consultant.png"
             alt="Консультант"
             width={265}
             height={370}

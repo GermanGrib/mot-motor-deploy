@@ -58,7 +58,7 @@ const ProductCard = ({
           <div className="text-xl text-mm-main">{currentPrice} руб.</div>
           <div className="flex gap-1.5 text-xs md:text-sm font-medium">
             <Image
-              src="/discount.svg"
+              src="./discount.svg"
               alt="Иконка процента"
               width={16}
               height={16}
