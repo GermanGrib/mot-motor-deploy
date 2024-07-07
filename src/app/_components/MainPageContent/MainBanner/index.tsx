@@ -1,4 +1,5 @@
 "use client";
+import classNames from "classnames";
 import Image from "next/image";
 import Link from "next/link";
 import { Autoplay, Pagination } from "swiper/modules";
@@ -11,8 +12,6 @@ import "./customerSwiper.scss";
 import mainBannerJpg from "@/_assets/images/jpgs/mainBanner.jpg";
 import promoBannerJpg from "@/_assets/images/jpgs/tradeIn.jpg";
 import mainBannerData from "@/_data/mainPage/mainBanner.json";
-
-import classNames from "classnames";
 
 const MainBanner = () => {
   const mainSliderAutoplayDelay = 3000;

@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import * as React from "react";
 
 import { cn } from "@/_utils/_utils";
@@ -16,6 +17,9 @@ const Card = React.forwardRef<
   />
 ));
 Card.displayName = "Card";
+Card.propTypes = {
+  className: PropTypes.string,
+};
 
 const CardHeader = React.forwardRef<
   HTMLDivElement,
@@ -28,6 +32,9 @@ const CardHeader = React.forwardRef<
   />
 ));
 CardHeader.displayName = "CardHeader";
+CardHeader.propTypes = {
+  className: PropTypes.string,
+};
 
 const CardTitle = React.forwardRef<
   HTMLParagraphElement,
@@ -43,6 +50,9 @@ const CardTitle = React.forwardRef<
   />
 ));
 CardTitle.displayName = "CardTitle";
+CardTitle.propTypes = {
+  className: PropTypes.string,
+};
 
 const CardDescription = React.forwardRef<
   HTMLParagraphElement,
@@ -55,6 +65,9 @@ const CardDescription = React.forwardRef<
   />
 ));
 CardDescription.displayName = "CardDescription";
+CardDescription.propTypes = {
+  className: PropTypes.string,
+};
 
 const CardContent = React.forwardRef<
   HTMLDivElement,
@@ -63,6 +76,9 @@ const CardContent = React.forwardRef<
   <div ref={ref} className={cn("p-6 pt-0", className)} {...props} />
 ));
 CardContent.displayName = "CardContent";
+CardContent.propTypes = {
+  className: PropTypes.string,
+};
 
 const CardFooter = React.forwardRef<
   HTMLDivElement,
@@ -75,6 +91,9 @@ const CardFooter = React.forwardRef<
   />
 ));
 CardFooter.displayName = "CardFooter";
+CardFooter.propTypes = {
+  className: PropTypes.string,
+};
 
 export {
   Card,
