@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "title": "Контент главного баннера",
+    "content": [
+      {
+        "id": 10,
+        "src": "/_assets/images/jpgs/mainBanner.jpg",
+        "route": "/#"
+      },
+      {
+        "id": 11,
+        "src": "/_assets/images/jpgs/mainBanner.jpg",
+        "route": "/#"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Контент 4 банера рядом с главным",
+    "content": [
+      {
+        "id": 20,
+        "src": "/_assets/images/jpgs/saleHit.jpg",
+        "route": "#"
+      },
+      {
+        "id": 21,
+        "src": "/_assets/images/jpgs/tradeIn.jpg",
+        "route": "#"
+      },
+      {
+        "id": 22,
+        "src": "/_assets/images/jpgs/offers.jpg",
+        "route": "#"
+      },
+      {
+        "id": 23,
+        "src": "/_assets/images/jpgs/repair.jpg",
+        "route": "#"
+      }
+    ]
+  }
+]

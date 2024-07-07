@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "О компании",
+    "route": "about"
+  },
+  {
+    "id": 2,
+    "title": "Контакты",
+    "route": "contacts"
+  },
+  {
+    "id": 3,
+    "title": "Оформление заказа",
+    "route": "checkout"
+  },
+  {
+    "id": 4,
+    "title": "Доставка и оплата",
+    "route": "delivery"
+  },
+  {
+    "id": 5,
+    "title": "Рассрочка",
+    "route": "credit"
+  },
+  {
+    "id": 6,
+    "title": "Ремонт лодочных моторов",
+    "route": "remont"
+  },
+  {
+    "id": 7,
+    "title": "Купить оптом",
+    "route": "wholesalers"
+  },
+  {
+    "id": 8,
+    "title": "Положение о применении РТ",
+    "route": "polozhenie-o-primenenii-rekomendatelnyh-tehnologij"
+  }
+]

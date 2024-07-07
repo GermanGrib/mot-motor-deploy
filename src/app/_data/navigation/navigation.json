@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "title": "О компании",
+    "route": "#",
+    "content": [
+      {
+        "id": 10,
+        "title": "ремонт лодочных моторов",
+        "route": "remont"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Акции",
+    "route": "akcii",
+    "content": [
+      {
+        "id": 20,
+        "title": "Взять технику в рассрочку",
+        "route": "credit"
+      },
+      {
+        "id": 21,
+        "title": "Взять технику в кредит",
+        "route": "vzjat-tehniku-v-kredit"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Бренды",
+    "route": "brands",
+    "content": [
+      {
+        "id": 30,
+        "title": "снегоходы",
+        "svg": "",
+        "route": "credit",
+        "content": [
+          "C moto",
+          "ABM"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Доставка и оплата",
+    "route": "delivery",
+    "content": [
+      {
+        "id": 40,
+        "title": "Реквизиты компании",
+        "route": "rekvizity-kompanii"
+      },
+      {
+        "id": 41,
+        "title": "Возврат товара и денег",
+        "route": "vozvrat-tovara-i-deneg"
+      },
+      {
+        "id": 42,
+        "title": "Защита персональных данных",
+        "route": "zashhita-personalnyh-dannyh"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Видео-отзывы",
+    "route": "customer-reviews",
+    "content": []
+  },
+  {
+    "id": 6,
+    "title": "Контакты",
+    "route": "contacts",
+    "content": []
+  }
+]

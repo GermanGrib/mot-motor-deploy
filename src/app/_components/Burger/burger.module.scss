@@ -1,0 +1,53 @@
+@import '@/_assets/styles/variables';
+
+.burger {
+  &:before,
+  &:after,
+  & div {
+    content: "";
+    display: block;
+    transition: transform .4s;
+  }
+  &.mobile {
+    display: none;
+    @media(max-width: $mediaMobile) {
+      display: block;
+      min-width: 30px;
+    }
+    &:before,
+    &:after,
+    & div {
+      height: 5px;
+      margin: 7px 0;
+      background: $primaryText;
+    }
+    &.isOpen:before {
+      transform: translateY(12px) rotate(135deg);
+    }
+    &.isOpen:after {
+      transform: translateY(-12px) rotate(-135deg);
+    }
+    &.isOpen div {
+      transform: scale(0);
+    }
+  }
+  &.catalog {
+    min-width: 13px;
+    &:before,
+    &:after,
+    & div {
+      height: 2px;
+      margin: 2px 0;
+      background: $mainColor;
+    }
+    &.isOpen:before {
+      transform: translateY(4px) rotate(135deg);
+    }
+    &.isOpen:after {
+      transform: translateY(-4px) rotate(-135deg);
+    }
+    &.isOpen div {
+      transform: scale(0);
+    }
+  }
+}

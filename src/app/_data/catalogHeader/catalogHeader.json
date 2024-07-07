@@ -1,0 +1,380 @@
+[
+  {
+    "id": 1,
+    "title": "Спец предложение",
+    "route": "/spec-predlojenie",
+    "svg": "fire.svg",
+    "content": [
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Лодочные моторы",
+    "route": "lodochnie-motori",
+    "svg": "supBoy.svg",
+    "content": [
+      {
+        "id": 10,
+        "title": "Маломощные лодочные моторы",
+        "route": "/malamoshnie-lodochnie-motori"
+      },
+      {
+        "id": 11,
+        "title": "Электровелосипеды Ancheer",
+        "route": "/lodochnie-motori-alfa"
+      },
+      {
+        "id": 12,
+        "title": "Маломощные лодочные моторы",
+        "route": "/malamoshnie-lodochnie-motori"
+      },
+      {
+        "id": 13,
+        "title": "Лодочный моторы Alfa",
+        "route": "/lodochnie-motori-alfa"
+      },
+      {
+        "id": 14,
+        "title": "Маломощные лодочные моторы",
+        "route": "/malamoshnie-lodochnie-motori"
+      },
+      {
+        "id": 15,
+        "title": "Лодочный моторы Alfa",
+        "route": "/lodochnie-motori-alfa"
+      },
+      {
+        "id": 16,
+        "title": "Маломощные лодочные моторы",
+        "route": "/malamoshnie-lodochnie-motori"
+      },
+      {
+        "id": 17,
+        "title": "Лодочный моторы Alfa",
+        "route": "/lodochnie-motori-alfa"
+      },
+      {
+        "id": 18,
+        "title": "Маломощные лодочные моторы",
+        "route": "/malamoshnie-lodochnie-motori"
+      },
+      {
+        "id": 19,
+        "title": "Лодочный моторы Alfa",
+        "route": "/lodochnie-motori-alfa"
+      },
+      {
+        "id": 20,
+        "title": "Маломощные лодочные моторы",
+        "route": "/malamoshnie-lodochnie-motori"
+      },
+      {
+        "id": 21,
+        "title": "Электровелосипеды Ancheer",
+        "route": "/lodochnie-motori-alfa"
+      },
+      {
+        "id": 22,
+        "title": "Маломощные лодочные моторы",
+        "route": "/malamoshnie-lodochnie-motori"
+      },
+      {
+        "id": 23,
+        "title": "Лодочный моторы Alfa",
+        "route": "/lodochnie-motori-alfa"
+      },
+      {
+        "id": 24,
+        "title": "Маломощные лодочные моторы",
+        "route": "/malamoshnie-lodochnie-motori"
+      },
+      {
+        "id": 25,
+        "title": "Лодочный моторы Alfa",
+        "route": "/lodochnie-motori-alfa"
+      },
+      {
+        "id": 26,
+        "title": "Маломощные лодочные моторы",
+        "route": "/malamoshnie-lodochnie-motori"
+      },
+      {
+        "id": 27,
+        "title": "Лодочный моторы Alfa",
+        "route": "/lodochnie-motori-alfa"
+      },
+      {
+        "id": 28,
+        "title": "Маломощные лодочные моторы",
+        "route": "/malamoshnie-lodochnie-motori"
+      },
+      {
+        "id": 29,
+        "title": "Лодочный моторы Alfa",
+        "route": "/lodochnie-motori-alfa"
+      },
+      {
+        "id": 30,
+        "title": "Маломощные лодочные моторы",
+        "route": "/malamoshnie-lodochnie-motori"
+      },
+      {
+        "id": 31,
+        "title": "Электровелосипеды Ancheer",
+        "route": "/lodochnie-motori-alfa"
+      },
+      {
+        "id": 32,
+        "title": "Маломощные лодочные моторы",
+        "route": "/malamoshnie-lodochnie-motori"
+      },
+      {
+        "id": 33,
+        "title": "Лодочный моторы Alfa",
+        "route": "/lodochnie-motori-alfa"
+      },
+      {
+        "id": 34,
+        "title": "Маломощные лодочные моторы",
+        "route": "/malamoshnie-lodochnie-motori"
+      },
+      {
+        "id": 35,
+        "title": "Лодочный моторы Alfa",
+        "route": "/lodochnie-motori-alfa"
+      },
+      {
+        "id": 36,
+        "title": "Маломощные лодочные моторы",
+        "route": "/malamoshnie-lodochnie-motori"
+      },
+      {
+        "id": 37,
+        "title": "Лодочный моторы Alfa",
+        "route": "/lodochnie-motori-alfa"
+      },
+      {
+        "id": 38,
+        "title": "Маломощные лодочные моторы",
+        "route": "/malamoshnie-lodochnie-motori"
+      },
+      {
+        "id": 39,
+        "title": "Лодочный моторы Alfa",
+        "route": "/lodochnie-motori-alfa"
+      },
+      {
+        "id": 40,
+        "title": "Маломощные лодочные моторы",
+        "route": "/malamoshnie-lodochnie-motori"
+      },
+      {
+        "id": 41,
+        "title": "Электровелосипеды Ancheer",
+        "route": "/lodochnie-motori-alfa"
+      },
+      {
+        "id": 42,
+        "title": "Маломощные лодочные моторы",
+        "route": "/malamoshnie-lodochnie-motori"
+      },
+      {
+        "id": 43,
+        "title": "Лодочный моторы Alfa",
+        "route": "/lodochnie-motori-alfa"
+      },
+      {
+        "id": 44,
+        "title": "Маломощные лодочные моторы",
+        "route": "/malamoshnie-lodochnie-motori"
+      },
+      {
+        "id": 45,
+        "title": "Лодочный моторы Alfa",
+        "route": "/lodochnie-motori-alfa"
+      },
+      {
+        "id": 46,
+        "title": "Маломощные лодочные моторы",
+        "route": "/malamoshnie-lodochnie-motori"
+      },
+      {
+        "id": 47,
+        "title": "Лодочный моторы Alfa",
+        "route": "/lodochnie-motori-alfa"
+      },
+      {
+        "id": 48,
+        "title": "Маломощные лодочные моторы",
+        "route": "/malamoshnie-lodochnie-motori"
+      },
+      {
+        "id": 49,
+        "title": "Лодочный моторы Alfa",
+        "route": "/lodochnie-motori-alfa"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Лодки ПВХ",
+    "route": "lodka-pvh",
+    "svg": "/supBoy.svg",
+    "content": [
+      {
+        "id": 30,
+        "title": "Супер Лодка ПВХ",
+        "route": "/super-lodka-pvh"
+      },
+      {
+        "id": 31,
+        "title": "Супер лодка ПВХ Admiral",
+        "route": "/super-lodka-pvh-admiral"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Спец предложение",
+    "route": "/spec-predlojenie",
+    "svg": "fire.svg",
+    "content": [
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Спец предложение",
+    "route": "/spec-predlojenie",
+    "svg": "fire.svg",
+    "content": [
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Спец предложение",
+    "route": "/spec-predlojenie",
+    "svg": "fire.svg",
+    "content": [
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Спец предложение",
+    "route": "/spec-predlojenie",
+    "svg": "/fire.svg",
+    "content": [
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Спец предложение",
+    "route": "/spec-predlojenie",
+    "svg": "/fire.svg",
+    "content": [
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Спец предложение",
+    "route": "/spec-predlojenie",
+    "svg": "/fire.svg",
+    "content": [
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Спец предложение",
+    "route": "/spec-predlojenie",
+    "svg": "/fire.svg",
+    "content": [
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Спец предложение",
+    "route": "/spec-predlojenie",
+    "svg": "/fire.svg",
+    "content": [
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Спец предложение",
+    "route": "/spec-predlojenie",
+    "svg": "/fire.svg",
+    "content": [
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Спец предложение",
+    "route": "/spec-predlojenie",
+    "svg": "/fire.svg",
+    "content": [
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Спец предложение",
+    "route": "/spec-predlojenie",
+    "svg": "/fire.svg",
+    "content": [
+    ]
+  },
+  {
+    "id": 15,
+    "title": "Спец предложение",
+    "route": "/spec-predlojenie",
+    "svg": "/fire.svg",
+    "content": [
+    ]
+  },
+  {
+    "id": 16,
+    "title": "Спец предложение",
+    "route": "/spec-predlojenie",
+    "svg": "/fire.svg",
+    "content": [
+    ]
+  },
+  {
+    "id": 17,
+    "title": "Спец предложение",
+    "route": "/spec-predlojenie",
+    "svg": "/fire.svg",
+    "content": [
+    ]
+  },
+  {
+    "id": 18,
+    "title": "Спец предложение",
+    "route": "/spec-predlojenie",
+    "svg": "/fire.svg",
+    "content": [
+    ]
+  },
+  {
+    "id": 19,
+    "title": "Спец предложение",
+    "route": "/spec-predlojenie",
+    "svg": "/fire.svg",
+    "content": [
+    ]
+  },
+  {
+    "id": 20,
+    "title": "Спец предложение",
+    "route": "/spec-predlojenie",
+    "svg": "/fire.svg",
+    "content": [
+    ]
+  },
+  {
+    "id": 21,
+    "title": "Спец предложение",
+    "route": "/spec-predlojenie",
+    "svg": "/fire.svg",
+    "content": [
+    ]
+  }
+]
