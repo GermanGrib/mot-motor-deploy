@@ -23,7 +23,7 @@ const PopupCatalog = ({ catalogData, main }: PopupCatalogProps) => {
       onMouseLeave={onMouseLeavePopupMenu}
     >
       <div
-        className={`flex w-full left-0 sm:left-auto absolute z-10 ${menuItemActive !== undefined ? "w-full" : "w-fit"}`}
+        className={`flex w-full lg:w-fit left-0 sm:left-auto absolute z-10 ${menuItemActive !== undefined ? "w-full" : "w-fit"}`}
       >
         <PopupCatalogMenu
           categoryData={catalogData}

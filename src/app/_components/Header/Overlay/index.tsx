@@ -15,7 +15,7 @@ const Overlay = () => {
     <>
       {isCatalogOpen && (
         <div
-          className="flex absolute w-screen h-screen bg-[#333C494D] z-20"
+          className="flex absolute w-full h-full bg-[#333C494D] z-20"
           onClick={handleOverlayClick}
         />
       )}

@@ -229,7 +229,7 @@ const Footer = () => {
             <SimpleBar className={styles.simpleBar}>
               <div className="relative min-h-[300px] sm:min-h-[150px]">
                 <ul
-                  className={`absolute flex flex-col md:gap-2.5 md:grid md:grid-cols-2 w-full h-full justify-center items-start transform -translate-x-[10000px] ${activeButton === 1 && "-translate-x-0"}`}
+                  className={`absolute flex flex-col md:gap-2.5 md:grid md:grid-cols-2 w-full h-full justify-center items-start transform -translate-x-[10000px] ${activeButton === 1 && "translate-x-0"}`}
                 >
                   <li className="w-full">
                     <Link
@@ -265,7 +265,7 @@ const Footer = () => {
                   </li>
                 </ul>
                 <ul
-                  className={`absolute flex flex-col md:gap-2.5 md:grid md:grid-cols-2 w-full h-full justify-center items-start transform -translate-x-[10000px] ${activeButton === 2 && "-translate-x-0"}`}
+                  className={`absolute flex flex-col md:gap-2.5 md:grid md:grid-cols-2 w-full h-full justify-center items-start transform -translate-x-[10000px] ${activeButton === 2 && "translate-x-0"}`}
                 >
                   <li className="w-full">
                     <Link

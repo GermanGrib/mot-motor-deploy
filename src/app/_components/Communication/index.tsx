@@ -41,7 +41,7 @@ const Communication = ({
         {showPhoneNumber && formatPhoneNumber(phoneNumber)}
         {showIcon && communicationType?.whatsApp && (
           <Image
-            className="select-none"
+            className="select-none w-auto h-auto"
             src={WhatsAppIcon}
             alt="Иконка вотс апп"
             width={36}
@@ -50,6 +50,7 @@ const Communication = ({
         )}
         {showIcon && communicationType?.phoneCall && (
           <Image
+            className="w-auto h-auto"
             src={phoneCallIcon}
             alt="иконка телефона"
             width={30}

@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
@@ -26,6 +26,7 @@ const Navigation = () => {
   const handleCatalogBtnClick = () => {
     dispatch(toggleCatalogPopup());
   };
+  const router = useRouter();
 
   const handleDropdownMouseEnter = (itemId: number) => {
     setOpenDropdown(itemId);
@@ -34,6 +35,16 @@ const Navigation = () => {
   const handleDropdownMouseLeave = () => {
     setOpenDropdown(null);
   };
+
+  const handleNavItemClick = (route: string) => {
+    router.push(route);
+  };
+
+  const handleMenuItemClick = (e: React.MouseEvent, route: string) => {
+    e.stopPropagation();
+    router.push(route);
+  };
+
   return (
     <div className="bg-transparent py-1.5 text-base text-white md:bg-mm-main">
       <div className="flex gap-2 md:gap-5 lg:gap-12 container">
@@ -66,8 +77,8 @@ const Navigation = () => {
                   key={item.id}
                   className="relative flex items-center h-full text-xs lg:text-base"
                 >
-                  <Link
-                    href={item.route}
+                  <div
+                    onClick={e => handleNavItemClick(item.route)}
                     className="flex h-full gap-1.5 items-center select-none whitespace-nowrap"
                   >
                     <DropdownMenu open={isDropdownOpen}>
@@ -85,9 +96,14 @@ const Navigation = () => {
                             {item.content.map(result => {
                               return (
                                 <DropdownMenuItem key={result.id}>
-                                  <Link href={result.route}>
+                                  <div
+                                    onClick={e =>
+                                      handleMenuItemClick(e, result.route)
+                                    }
+                                    className="flex w-full hover:text-mm-main-hover cursor-pointer"
+                                  >
                                     {result.title}
-                                  </Link>
+                                  </div>
                                 </DropdownMenuItem>
                               );
                             })}
@@ -95,7 +111,7 @@ const Navigation = () => {
                         )}
                       </DropdownMenuTrigger>
                     </DropdownMenu>
-                  </Link>
+                  </div>
                 </li>
               );
             })}

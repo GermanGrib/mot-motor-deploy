@@ -1,4 +1,4 @@
-import MainPageContent from "@/_components/MainPageContent";
+import MainPageContent from "./_MainPageContent";
 
 export default function Home() {
   return <MainPageContent />;

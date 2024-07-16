@@ -24,11 +24,11 @@ const CityPicker = ({ className }: CityPickerProps) => {
 
   return (
     <button
-      className={`flex w-32 justify-between items-center bg-transparent border-0 outline-0 cursor-pointer ${className}`}
+      className={`flex gap-1.5 justify-between items-center bg-transparent border-0 outline-0 cursor-pointer w-fit ${className}`}
       onClick={handleBtnClick}
     >
       <Image
-        className="w-4 h-4"
+        className="w-4 h-4 mr-1.5 w-auto h-auto"
         src={locationSvg}
         alt="знак локации"
         width={16}

@@ -7,7 +7,6 @@ import Burger from "@/_components/Burger";
 import CityPicker from "@/_components/CityPicker";
 import CitySearch from "@/_components/CityPicker/CitySearch";
 import Communication from "@/_components/Communication";
-import ArrowIcon from "@/_components/Icons/Arrow";
 import Logo from "@/_components/Logo";
 import ModalWindows from "@/_components/ModalWindows";
 import Search from "@/_components/Search";
@@ -57,7 +56,7 @@ const UserInteraction = () => {
 
         <Search className="hidden md:flex md:max-w-[426px]" />
 
-        <div className="flex items-center gap-2.5 md:gap-5">
+        <div className="flex min-w-fit items-center gap-2.5 md:gap-5">
           <div className="hidden md:block">
             <div className="flex gap-1.5 items-center">
               <Communication
@@ -66,7 +65,6 @@ const UserInteraction = () => {
                 showPhoneNumber
                 variant="default"
               />
-              <ArrowIcon main />
             </div>
             <div className="flex items-center gap-2">
               <div className="flex items-center justify-center w-2 h-2 bg-mm-grass rounded-full">

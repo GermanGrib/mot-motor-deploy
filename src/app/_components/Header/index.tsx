@@ -15,14 +15,16 @@ const Header = () => {
     (state: RootState) => state.catalogPopup,
   );
   return (
-    <header className="relative">
-      <GreetingsInfo />
-      <UserInteraction />
-      <Navigation />
-      <PopupCatalog catalogData={popupCatalogData} main />
-      <BurgerMenu />
+    <>
+      <header className="relative">
+        <GreetingsInfo />
+        <UserInteraction />
+        <Navigation />
+        <PopupCatalog catalogData={popupCatalogData} main />
+        <BurgerMenu />
+      </header>
       <Overlay />
-    </header>
+    </>
   );
 };
 

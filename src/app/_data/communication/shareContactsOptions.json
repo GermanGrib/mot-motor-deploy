@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "Я-мессенджер",
+    "href": "https://yandex.ru/chat?text=",
+    "bgColor": "#05cece"
+  },
+  {
+    "id": 2,
+    "title": "VK",
+    "href": "https://vk.com/share.php?url=",
+    "bgColor": "#0077ff"
+  },
+  {
+    "id": 3,
+    "title": "OK",
+    "href": "https://connect.ok.ru/offer?url=",
+    "bgColor": "#ff7700"
+  },
+  {
+    "id": 4,
+    "title": "Telegram",
+    "href": "https://t.me/share/url?url=",
+    "bgColor": "#64a9dc"
+  },
+  {
+    "id": 5,
+    "title": "Twitter",
+    "href": "https://twitter.com/intent/tweet?text=",
+    "bgColor": "#0f1419"
+  },
+  {
+    "id": 6,
+    "title": "Viber",
+    "href": "iber://forward?text=",
+    "bgColor": "#7b519d"
+  },
+  {
+    "id": 7,
+    "title": "WhatsApp",
+    "href": "https://api.whatsapp.com/send?text=",
+    "bgColor": "#65bc54"
+  },
+  {
+    "id": 8,
+    "title": "MailRu",
+    "href": "https://connect.mail.ru/share?url=",
+    "bgColor": "#168de2"
+  },
+  {
+    "id": 9,
+    "title": "LiveJournal",
+    "href": "https://www.livejournal.com/update.bml?subject=",
+    "bgColor": "#0d425a"
+  }
+]
