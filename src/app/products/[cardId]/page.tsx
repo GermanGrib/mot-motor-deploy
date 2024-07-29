@@ -7,6 +7,7 @@ import SimilarProducts from "@/components/page-detailed-card-content/similar-pro
 import TabsSwitcher from "@/components/page-detailed-card-content/tabs-switcher";
 import VideoConsultation from "@/components/video-consultation";
 import productCards from "@/data/mock-product-cards-data/product-card-data.json";
+import ProductCardContent from "@/types/intefaces/product-card.interface";
 
 export async function generateStaticParams() {
   return cardData.map(card => ({
@@ -14,32 +15,25 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function getStaticProps({
-  params,
-}: {
-  params: { cardId: string };
-}) {
-  const card = cardData.find(card => card.id.toString() === params.cardId);
+export async function getCardData({ params }: { params: { cardId: string } }) {
+  const res = await fetch("");
 
-  if (!card) {
-    return {
-      notFound: true,
-    };
+  if (!res.ok) {
+    throw new Error("Failed to fetch data");
   }
 
-  return {
-    props: {
-      card,
-    },
-  };
+  return res.json();
 }
 
-const DetailedCard = (props: {
+const DetailedCard = async (props: {
   params: {
     cardId: string;
   };
 }) => {
-  const card = cardData.find(card => Number(props.params.cardId) === card.id);
+  const cardData = await getCardData({ params: { cardId: "1" } });
+  const card = cardData.find(
+    (card: ProductCardContent) => Number(props.params.cardId) === card.id,
+  );
   if (!card) {
     return (
       <section>
