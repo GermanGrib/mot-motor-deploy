@@ -21,7 +21,7 @@ const DetailedCard = async (props: {
   };
 }) => {
   const test = generateStaticParams();
-  console.log(test, "TEST HERE");
+
   const card = cardData.find(
     (card: ProductCardContent) => Number(props.params.cardId) === card.id,
   );
