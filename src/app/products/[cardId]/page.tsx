@@ -9,11 +9,19 @@ import VideoConsultation from "@/components/video-consultation";
 import productCards from "@/data/mock-product-cards-data/product-card-data.json";
 import ProductCardContent from "@/types/intefaces/product-card.interface";
 
+export async function generateStaticParams() {
+  return cardData.map(card => ({
+    cardId: card.id.toString(),
+  }));
+}
+
 const DetailedCard = async (props: {
   params: {
     cardId: string;
   };
 }) => {
+  const test = generateStaticParams();
+  console.log(test, "TEST HERE");
   const card = cardData.find(
     (card: ProductCardContent) => Number(props.params.cardId) === card.id,
   );
