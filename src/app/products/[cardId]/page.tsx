@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 import CarouselRecommendations from "@/components/carousel-recommendations";
 import ContactsAndShareInformation from "@/components/page-detailed-card-content/contacts-and-share-information";
 import ExtraOffers from "@/components/page-detailed-card-content/extra-offers";
@@ -15,20 +17,35 @@ import ProductCardContent from "@/types/intefaces/product-card.interface";
 //   }));
 // }
 
-export function generateStaticParams() {
-  return [{ slug: [""] }];
-}
+// export function generateStaticParams() {
+//   return [{ slug: [""] }];
+// }
 
-const DetailedCard = async (props: {
+interface ParamsExampleTest {
   params: {
     cardId: string;
   };
-}) => {
-  const test = generateStaticParams();
-  console.log(test);
+}
+
+// Функция для генерации статических параметров
+export function generateStaticParams() {
+  return cardData.map(card => ({
+    cardId: card.id.toString(),
+  }));
+}
+
+// props: {
+//   params: {
+//     cardId: string;
+//   };
+// }
+
+const DetailedCard: React.FC<ParamsExampleTest> = async ({ params }) => {
+  const { cardId } = params;
+  console.log(cardId);
 
   const card = cardData.find(
-    (card: ProductCardContent) => Number(props.params.cardId) === card.id,
+    (card: ProductCardContent) => Number(cardId) === card.id,
   );
   if (!card) {
     return (
@@ -55,6 +72,12 @@ const DetailedCard = async (props: {
       <div className="mb-5"></div>
     </>
   );
+};
+
+DetailedCard.propTypes = {
+  params: PropTypes.shape({
+    cardId: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default DetailedCard;
