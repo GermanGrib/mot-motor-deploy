@@ -9,28 +9,11 @@ import VideoConsultation from "@/components/video-consultation";
 import productCards from "@/data/mock-product-cards-data/product-card-data.json";
 import ProductCardContent from "@/types/intefaces/product-card.interface";
 
-export async function generateStaticParams() {
-  return cardData.map(card => ({
-    cardId: card.id.toString(),
-  }));
-}
-
-export async function getCardData({ params }: { params: { cardId: string } }) {
-  const res = await fetch("");
-
-  if (!res.ok) {
-    throw new Error("Failed to fetch data");
-  }
-
-  return res.json();
-}
-
 const DetailedCard = async (props: {
   params: {
     cardId: string;
   };
 }) => {
-  const cardData = await getCardData({ params: { cardId: "1" } });
   const card = cardData.find(
     (card: ProductCardContent) => Number(props.params.cardId) === card.id,
   );
