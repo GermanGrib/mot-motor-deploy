@@ -11,27 +11,14 @@ import productCards from "@/data/mock-product-cards-data/product-card-data.json"
 import cardData from "@/data/mock-product-cards-data/product-card-data.json";
 import ProductCardContent from "@/types/intefaces/product-card.interface";
 
-// export async function generateStaticParams() {
-//   return cardData.map(card => ({
-//     cardId: card.id.toString(),
-//   }));
-// }
-
-// export function generateStaticParams() {
-//   return [{ slug: [""] }];
-// }
+export function generateStaticParams() {
+  return [{ cardId: ["1"] }];
+}
 
 interface ParamsExampleTest {
   params: {
     cardId: string;
   };
-}
-
-// Функция для генерации статических параметров
-export function generateStaticParams() {
-  return cardData.map(card => ({
-    cardId: card.id.toString(),
-  }));
 }
 
 // props: {
