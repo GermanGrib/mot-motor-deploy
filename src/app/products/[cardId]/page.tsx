@@ -1,4 +1,3 @@
-import cardData from "../../../data/mock-product-cards-data/product-card-data.json";
 import CarouselRecommendations from "@/components/carousel-recommendations";
 import ContactsAndShareInformation from "@/components/page-detailed-card-content/contacts-and-share-information";
 import ExtraOffers from "@/components/page-detailed-card-content/extra-offers";
@@ -7,20 +6,21 @@ import SimilarProducts from "@/components/page-detailed-card-content/similar-pro
 import TabsSwitcher from "@/components/page-detailed-card-content/tabs-switcher";
 import VideoConsultation from "@/components/video-consultation";
 import productCards from "@/data/mock-product-cards-data/product-card-data.json";
+import cardData from "@/data/mock-product-cards-data/product-card-data.json";
 import ProductCardContent from "@/types/intefaces/product-card.interface";
 
-export async function generateStaticParams() {
-  return cardData.map(card => ({
-    cardId: card.id.toString(),
-  }));
-}
+// export async function generateStaticParams() {
+//   return cardData.map(card => ({
+//     cardId: card.id.toString(),
+//   }));
+// }
 
 const DetailedCard = async (props: {
   params: {
     cardId: string;
   };
 }) => {
-  const test = generateStaticParams();
+  // const test = generateStaticParams();
 
   const card = cardData.find(
     (card: ProductCardContent) => Number(props.params.cardId) === card.id,
