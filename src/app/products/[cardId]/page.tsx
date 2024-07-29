@@ -8,6 +8,32 @@ import TabsSwitcher from "@/components/page-detailed-card-content/tabs-switcher"
 import VideoConsultation from "@/components/video-consultation";
 import productCards from "@/data/mock-product-cards-data/product-card-data.json";
 
+export async function generateStaticParams() {
+  return cardData.map(card => ({
+    cardId: card.id.toString(),
+  }));
+}
+
+export async function getStaticProps({
+  params,
+}: {
+  params: { cardId: string };
+}) {
+  const card = cardData.find(card => card.id.toString() === params.cardId);
+
+  if (!card) {
+    return {
+      notFound: true,
+    };
+  }
+
+  return {
+    props: {
+      card,
+    },
+  };
+}
+
 const DetailedCard = (props: {
   params: {
     cardId: string;
