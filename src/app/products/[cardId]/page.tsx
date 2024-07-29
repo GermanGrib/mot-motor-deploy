@@ -15,6 +15,10 @@ import ProductCardContent from "@/types/intefaces/product-card.interface";
 //   }));
 // }
 
+export function generateStaticParams() {
+  return [{ slug: [""] }];
+}
+
 const DetailedCard = async (props: {
   params: {
     cardId: string;
