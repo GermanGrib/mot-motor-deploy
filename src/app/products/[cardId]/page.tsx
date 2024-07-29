@@ -12,7 +12,7 @@ import cardData from "@/data/mock-product-cards-data/product-card-data.json";
 import ProductCardContent from "@/types/intefaces/product-card.interface";
 
 export function generateStaticParams() {
-  return [{ cardId: "1" }, { cardId: "2" }, { cardId: "3" }];
+  return [{ cardId: "1" }];
 }
 
 interface ParamsExampleTest {
