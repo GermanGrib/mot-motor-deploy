@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { useEffect } from "react";
 
-import RoutesPaths from "@/types/enums/routes";
+import RoutesPaths from "../types/enums/routes";
 
 interface ErrorPageProps {
   error: Error & {

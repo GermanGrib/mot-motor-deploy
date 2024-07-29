@@ -1,9 +1,9 @@
 import { Inter } from "next/font/google";
 
-import "@/_assets/styles/global.scss";
-import Footer from "@/_components/Footer";
-import Header from "@/_components/Header";
-import { Providers } from "@/_store/provider";
+import "@/assets/styles/global.css";
+import Footer from "@/components/footer";
+import Header from "@/components/header";
+import { Providers } from "@/store/provider";
 
 import type { Metadata } from "next";
 
@@ -25,7 +25,7 @@ export default function RootLayout({
       <Providers>
         <body className={fontsNextClassname}>
           <Header />
-          <main className="flex flex-col gap-6 grow relative md:gap-11 lg:gap-14">
+          <main className="flex flex-col gap-6 grow md:gap-11 lg:gap-14">
             {children}
           </main>
           <Footer />

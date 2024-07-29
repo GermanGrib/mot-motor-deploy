@@ -1,0 +1,21 @@
+[
+  {
+    "id": 1,
+    "type": "checkBoxList",
+    "title": "Ширина",
+    "values": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ]
+  },
+  {
+    "id": 2,
+    "type": "rangeNumbers",
+    "title": "Цена, руб.",
+    "values": [
+      ""
+    ]
+  }
+]

@@ -1,0 +1,49 @@
+[
+  {
+    "id": 1,
+    "title": "Контент главного баннера",
+    "content": [
+      {
+        "id": 10,
+        "src": "/_assets/images/jpgs/mainBanner.jpg",
+        "route": "/#"
+      },
+      {
+        "id": 11,
+        "src": "/_assets/images/jpgs/mainBanner.jpg",
+        "route": "/#"
+      },
+      {
+        "id": 12,
+        "src": "/_assets/images/jpgs/mainBanner.jpg",
+        "route": "/#"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Контент 4 банера рядом с главным",
+    "content": [
+      {
+        "id": 20,
+        "src": "./mainPromoBanners/1.jpg",
+        "route": "#"
+      },
+      {
+        "id": 21,
+        "src": "./mainPromoBanners/2.jpg",
+        "route": "#"
+      },
+      {
+        "id": 22,
+        "src": "./mainPromoBanners/3.jpg",
+        "route": "#"
+      },
+      {
+        "id": 23,
+        "src": "./mainPromoBanners/4.jpg",
+        "route": "#"
+      }
+    ]
+  }
+]

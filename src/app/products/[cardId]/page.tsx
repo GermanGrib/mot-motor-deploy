@@ -1,5 +1,12 @@
-import DetailedCardContent from "../_DetailedCardContent";
-import cardData from "@/_data/mockProductCardsData/productCardData.json";
+import cardData from "../../../data/mock-product-cards-data/product-card-data.json";
+import CarouselRecommendations from "@/components/carousel-recommendations";
+import ContactsAndShareInformation from "@/components/page-detailed-card-content/contacts-and-share-information";
+import ExtraOffers from "@/components/page-detailed-card-content/extra-offers";
+import FirstImpression from "@/components/page-detailed-card-content/first-impression";
+import SimilarProducts from "@/components/page-detailed-card-content/similar-products";
+import TabsSwitcher from "@/components/page-detailed-card-content/tabs-switcher";
+import VideoConsultation from "@/components/video-consultation";
+import productCards from "@/data/mock-product-cards-data/product-card-data.json";
 
 const DetailedCard = (props: {
   params: {
@@ -17,7 +24,21 @@ const DetailedCard = (props: {
       </section>
     );
   }
-  return <DetailedCardContent />;
+  return (
+    <>
+      <FirstImpression />
+      <TabsSwitcher />
+      <SimilarProducts />
+      <ExtraOffers />
+      <VideoConsultation />
+      <ContactsAndShareInformation
+        productTitle={productCards[1].title}
+        productId={productCards[1].id}
+      />
+      <CarouselRecommendations />
+      <div className="mb-5"></div>
+    </>
+  );
 };
 
 export default DetailedCard;
