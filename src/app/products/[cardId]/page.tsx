@@ -1,5 +1,3 @@
-import PropTypes from "prop-types";
-
 import CarouselRecommendations from "@/components/carousel-recommendations";
 import ContactsAndShareInformation from "@/components/page-detailed-card-content/contacts-and-share-information";
 import ExtraOffers from "@/components/page-detailed-card-content/extra-offers";
@@ -7,29 +5,21 @@ import FirstImpression from "@/components/page-detailed-card-content/first-impre
 import SimilarProducts from "@/components/page-detailed-card-content/similar-products";
 import TabsSwitcher from "@/components/page-detailed-card-content/tabs-switcher";
 import VideoConsultation from "@/components/video-consultation";
-import productCards from "@/data/mock-product-cards-data/product-card-data.json";
 import cardData from "@/data/mock-product-cards-data/product-card-data.json";
 import ProductCardContent from "@/types/intefaces/product-card.interface";
 
 export function generateStaticParams() {
-  return [{ cardId: "1" }];
+  return [{ cardId: "1" }, { cardID: "2" }];
 }
 
-interface ParamsExampleTest {
+interface DetailedCardProps {
   params: {
     cardId: string;
   };
 }
 
-// props: {
-//   params: {
-//     cardId: string;
-//   };
-// }
-
-const DetailedCard: React.FC<ParamsExampleTest> = async ({ params }) => {
+const DetailedCard = async ({ params }: DetailedCardProps) => {
   const { cardId } = params;
-  console.log(cardId);
 
   const card = cardData.find(
     (card: ProductCardContent) => Number(cardId) === card.id,
@@ -52,19 +42,13 @@ const DetailedCard: React.FC<ParamsExampleTest> = async ({ params }) => {
       <ExtraOffers />
       <VideoConsultation />
       <ContactsAndShareInformation
-        productTitle={productCards[1].title}
-        productId={productCards[1].id}
+        productTitle={card.title}
+        productId={card.id}
       />
       <CarouselRecommendations />
       <div className="mb-5"></div>
     </>
   );
-};
-
-DetailedCard.propTypes = {
-  params: PropTypes.shape({
-    cardId: PropTypes.string.isRequired,
-  }).isRequired,
 };
 
 export default DetailedCard;

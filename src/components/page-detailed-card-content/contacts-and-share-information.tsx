@@ -1,12 +1,13 @@
 "use client";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useSelector } from "react-redux";
 
-import contactDetails from "../../data/communication/communication.json";
-import shareToOptions from "../../data/communication/share-contacts-options.json";
-import { RootState } from "../../store/store";
 import RoutesPaths from "../../types/enums/routes";
 import FormatPhoneNumber from "../../utils/format-phone-number";
+import contactDetails from "@/data/communication/communication.json";
+import shareToOptions from "@/data/communication/share-contacts-options.json";
+import { RootState } from "@/store/store";
 
 interface ContactsAndShareInformationProps {
   productTitle: string;
@@ -17,7 +18,7 @@ const ContactsAndShareInformation = ({
   productTitle,
 }: ContactsAndShareInformationProps) => {
   const currentCity = useSelector((state: RootState) => state.userDetails.city);
-  const currentUrl = window.location.href;
+  const currentUrl = usePathname();
 
   return (
     <section>
